@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "860bae6a-da2c-46e8-85b2-5af064ef19b2"
+      }
+    },
+    "owner": "bangflex"
   }
 }
