@@ -25,4 +25,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    backgroundColor: 'blue',
+    color: 'white',
+  },
 });
