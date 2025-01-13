@@ -1,6 +1,12 @@
 // https://docs.expo.dev/guides/using-eslint/
 module.exports = {
-  extends: ['expo', 'prettier', 'plugin:import/recommended'],
+  extends: [
+    'expo',
+    'prettier',
+    'plugin:import/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime', // 'React' must be in scope when using JSX 에러 해결
+  ],
   ignorePatterns: ['/dist/*'],
   plugins: [
     'prettier', // ESLint 규칙과 Prettier 규칙 충돌을 방지
@@ -31,6 +37,16 @@ module.exports = {
         ignoreMemberSort: false, // default value
         memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'], // default value
         allowSeparatedGroups: false, // default value
+      },
+    ],
+
+    'react/jsx-sort-props': [
+      'error',
+      {
+        callbacksLast: true, // true: callbacks은 뒷부분에
+        shorthandFirst: true,
+        ignoreCase: true,
+        noSortAlphabetically: false, // false: 알파벳순 정렬
       },
     ],
   },
