@@ -22,5 +22,16 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true }, // 알파벳순 정렬
       },
     ],
+
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true, // 대소문자 구분 없이 정렬
+        ignoreDeclarationSort: true, // **선언 순서는 import/order가 처리**
+        ignoreMemberSort: false, // default value
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'], // default value
+        allowSeparatedGroups: false, // default value
+      },
+    ],
   },
 };
