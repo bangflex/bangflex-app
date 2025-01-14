@@ -1,7 +1,7 @@
 import Feather from '@expo/vector-icons/Feather';
 import { Tabs } from 'expo-router';
 
-import { colors } from '@/theme/colors';
+import { colors } from '@/shared/theme/colors';
 
 type TabItem = {
   name: string;
@@ -38,7 +38,7 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.tabInactive,
+        tabBarInactiveTintColor: colors.inactive,
       }}
     >
       {tabItems.map((tabItem) => (

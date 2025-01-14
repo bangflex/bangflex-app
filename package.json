@@ -19,7 +19,8 @@
     "expo-router": "~4.0.16",
     "react-native-screens": "~4.4.0",
     "expo-linking": "~7.0.4",
-    "expo-constants": "~17.0.4"
+    "expo-constants": "~17.0.4",
+    "expo-image": "~2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
